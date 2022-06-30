@@ -44,18 +44,15 @@ enum class Key {
         override fun Utilize(branch: TreeNode) {
             if (!branch.has(1))
                 throw InvalidDeclarationException()
-            if (!branch.isA(Identity.Operation))
+            var operatorNode = branch.getLeft()
+            if (!operatorNode.isA(Identity.Operation))
                 throw InvalidDeclarationException()
-            if (getOperator(branch.getLeft().word) != Operator.Sep)
-                throw InvalidDeclarationException()
 
-            val sepNode: TreeNode = branch.getLeft()
+            val nameNode: TreeNode = operatorNode.getLeft()
 
-            val nameNode: TreeNode = sepNode.getLeft()
+            val typeNode: TreeNode = operatorNode.getRight()
 
-            val typeNode: TreeNode = sepNode.getRight()
-
-           println("$nameNode: $typeNode: $sepNode")
+           println("$nameNode: $typeNode: $operatorNode")
 
         }
     };

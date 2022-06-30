@@ -1,8 +1,12 @@
 package memory
 
+import exceptions.MemoryErrorException
+import exceptions.NameCollisionException
 import memory.Type.*
 import memory.modules.BooleanMemory
+import memory.modules.DoubleMemory
 import memory.modules.IntMemory
+import memory.modules.StringMemory
 
 class TypeLog() {
     private val internal: MutableMap<String, Type> = mutableMapOf()
@@ -17,16 +21,19 @@ class TypeLog() {
     }
 
     fun set(key: String, value: Type): Boolean {
-        if
+        if (internal.containsKey(key)) throw NameCollisionException()
+        internal[key] = value
+        return true
     }
+
+    fun contains(key: String): Boolean = internal.containsKey(key)
 }
 val LOG: TypeLog = TypeLog.Create()
 
 abstract class Memory <T> {
+
     abstract val type: Type
-//    companion object Factory {
-//        fun create(): Memory
-//    }
+
     abstract val internal: MutableMap<String, T>
 
     operator fun get(key: String): T = safeGet(key)
@@ -37,7 +44,7 @@ abstract class Memory <T> {
         throw IllegalStateException()
     }
 
-    fun set(key: String, value: T): Boolean{
+    open operator fun set(key: String, value: T): Boolean{
         if (internal.containsKey(key)) return false
         internal[key] = value
 
@@ -54,32 +61,30 @@ class AnyMemory: Memory<Any>() {
     override val internal: MutableMap<String, Any> = mutableMapOf()
 }
 
-val ANY_MEMORY_MAP:     AnyMemory = AnyMemory.create()
-val INT_MEMORY_MAP:     IntMemory = IntMemory.create()
-val BOOLEAN_MEMORY_MAP: BooleanMemory = BooleanMemory.create()
+val ANY_MEMORY_MAP:     AnyMemory       = AnyMemory.create()
+val INT_MEMORY_MAP:     IntMemory       = IntMemory.create()
+val STRING_MEMORY_MAP:  StringMemory    = StringMemory.create()
+val BOOLEAN_MEMORY_MAP: BooleanMemory   = BooleanMemory.create()
+val DOUBLE_MEMORY_MAP:  DoubleMemory    = DoubleMemory.create()
 
 typealias Name = String
 
-val contains: (name: Name) -> Boolean = { name: Name ->
-
-}
 
 val SET_VALUE_IN_MEMORY: (Type, Name, Any) -> Unit = { type: Type, name: Name, value: Any ->
-    if ()
+    LOG.set(name, type)
+    when (type) {
+        INT     -> INT_MEMORY_MAP[name] = value as Int
+        STRING  -> TODO()
+        BOOL    -> BOOLEAN_MEMORY_MAP[name] = value as Boolean
+        DOUBLE  -> DOUBLE_MEMORY_MAP[name]  = value as Double
+        ARRAY   -> TODO()
+        NTUPLE  -> TODO()
+        NONE -> TODO()
+        Err -> throw MemoryErrorException()
+        else -> ANY_MEMORY_MAP[name] = value
+    }
 }
 
 val GET_KEY_TYPE: (Name) -> Type = { name: Name -> LOG[name] }
 
-val GET_MEMORY_TABLE: (Type, name: Name, value: Any) -> Memory = { type: Type, name: Name, value: Any ->
-    when (type) {
-        INT     -> TODO()
-        STRING  -> TODO()
-        BOOL    -> TODO()
-        DOUBLE  -> TODO()
-        ARRAY   -> TODO()
-        NTUPLE  -> TODO()
-        NONE    -> TODO()
-        ANY     -> TODO()
-        Err     -> TODO()
-    }
-}
+

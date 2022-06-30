@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/demo.ly" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/demo.lie" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/exceptions/TypeExceptions.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/memory/modules/ArrayMemory.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/memory/modules/StringMemory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Key.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Key.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/memory/Memory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/memory/Memory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/memory/modules/DoubleMemory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/memory/modules/DoubleMemory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/memory/modules/IntMemory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/memory/modules/IntMemory.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/dentities/UtilizeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/dentities/UtilizeTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +282,7 @@
       <workItem from="1655554890342" duration="20000" />
       <workItem from="1655554922218" duration="14000" />
       <workItem from="1655555045487" duration="1781000" />
-      <workItem from="1656446371086" duration="33265000" />
+      <workItem from="1656446371086" duration="36002000" />
     </task>
     <task id="LOCAL-00001" summary="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
       <created>1656588269875</created>
@@ -290,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656588802844</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
+      <created>1656588968915</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656588968915</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
