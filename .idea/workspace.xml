@@ -4,43 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="Phrase and actiontree">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/exceptions/LexerExceptions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/functions/MainJava.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/Word.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/TokenLine.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/Tokenizer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Identity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Key.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Operator.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/token/Token.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tree/ActionTree.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tree/TreeNode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lookup/factories/FunctionLookup.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lookup/factories/TypeLookup.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/memory/Memory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/memory/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/memory/modules/BooleanMemory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/memory/modules/DoubleMemory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/memory/modules/IntMemory.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/demo.ly" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/dentities/UtilizeTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lexer/WordTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/parser/token/ParserTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/tree/ActionTreeTest.kt" afterDir="false" />
+    <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,8 +274,16 @@
       <workItem from="1655554890342" duration="20000" />
       <workItem from="1655554922218" duration="14000" />
       <workItem from="1655555045487" duration="1781000" />
-      <workItem from="1656446371086" duration="32434000" />
+      <workItem from="1656446371086" duration="33010000" />
     </task>
+    <task id="LOCAL-00001" summary="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
+      <created>1656588269875</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656588269876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +302,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Phrase and actiontree" />
-    <option name="LAST_COMMIT_MESSAGE" value="Phrase and actiontree" />
+    <MESSAGE value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is an Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
+    <MESSAGE value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestSuite$TestSuite__compileTestKotlin_.ic" NAME="TestSuite [compileTestKotlin] Coverage Results" MODIFIED="1654350454783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
