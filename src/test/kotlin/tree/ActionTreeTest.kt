@@ -1,11 +1,8 @@
 package tree
 
 import lexer.Word
-import lexer.tokenizer.TokenizeString
-import lexer.tokenizer.assertMeaning
-import lexer.tokenizer.functionVerifier
-import lexer.tokenizer.operatorVerifier
-import lexer.tree.buildActionTree
+import lexer.tokenizer.*
+import lexer.tree.*
 import org.junit.jupiter.api.DynamicTest
 import org.junit.jupiter.api.TestFactory
 import kotlin.test.assertEquals
@@ -78,6 +75,30 @@ internal class ActionTreeTest {
             val test = buildActionTree(input)
             println(test)
             assertEquals(test.head.word.text, expected)
+        }
+    }
+
+    @TestFactory
+    fun newBranchMethod() = listOf(
+        "print( print(x), 1, 2)" to "send",
+        "1 + 2 * 3" to "+",
+
+    ).map { (input, expected) ->
+        DynamicTest.dynamicTest("Token Line value is $input expected") {
+            val test = makeBranch(tokenizeStringAndAssertMeaning(input))
+            println(test)
+        }
+    }
+
+    @TestFactory
+    fun callSetTest() = listOf(
+        //"print(print(x))" to true,
+        "print( print(x + 3221))" to false
+    ).map { (input, expected) ->
+        DynamicTest.dynamicTest("Token Line value is $input expected") {
+            val callSet: CallLine = cleanAndBundle(tokenizeStringAndAssertMeaning(input))
+            //println(callSet)
+            println(callSet)
         }
     }
 

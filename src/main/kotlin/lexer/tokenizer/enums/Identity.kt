@@ -5,5 +5,6 @@ enum class Identity {
     Literal,
     Operation,
     Variable,
-    Type
+    Type,
+    Bump
 }

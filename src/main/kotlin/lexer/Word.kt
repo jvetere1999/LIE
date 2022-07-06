@@ -2,7 +2,7 @@ package lexer
 
 import lexer.tokenizer.enums.Identity
 
-data class Word(val text: String, val identifier: Identity) {
+data class Word(var text: String, var identifier: Identity) {
 
     fun isA(identity: Identity): Boolean {
         return identity == identifier

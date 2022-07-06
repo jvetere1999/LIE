@@ -31,7 +31,12 @@ data class TokenList(val tokens: Array<Token>) {
     }
 }
 
-val TokenizeString = { text: String ->
+val tokenizeStringAndAssertMeaning: (String) -> Words = {text: String ->
+    assertMeaning(TokenizeString(text))
+}
+
+
+val TokenizeString: (String) -> Tokens = { text: String ->
     val tokens: MutableList<Token> = arrayListOf()
     for (c: Char in text)
         tokens.add(Token(c))

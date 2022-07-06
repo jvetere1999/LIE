@@ -3,6 +3,11 @@ package lexer.tokenizer.enums
 import exceptions.InvalidDeclarationException
 import lexer.Word
 import lexer.tree.TreeNode
+import lookup.factories.TYPE_LOOKUP
+import memory.SET_VALUE_IN_MEMORY
+import memory.Type
+import java.lang.Integer.parseInt
+
 // Receive branch at function
 enum class Key {
     PRINT {
@@ -42,17 +47,6 @@ enum class Key {
     },
     LET {
         override fun Utilize(branch: TreeNode) {
-            if (!branch.has(1))
-                throw InvalidDeclarationException()
-            var operatorNode = branch.getLeft()
-            if (!operatorNode.isA(Identity.Operation))
-                throw InvalidDeclarationException()
-
-            val nameNode: TreeNode = operatorNode.getLeft()
-
-            val typeNode: TreeNode = operatorNode.getRight()
-
-           println("$nameNode: $typeNode: $operatorNode")
 
         }
     };

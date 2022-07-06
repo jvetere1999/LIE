@@ -9,18 +9,110 @@ import lexer.Word
 import lexer.Words
 import lexer.tokenizer.TokenizeString
 import lexer.tokenizer.assertMeaning
+import java.util.*
 
 data class ActionTree (val text: String, val head: TreeNode) {
 
-
     fun getHeadText(): String = head.getText()
-
     override fun toString(): String {
         return head.toString()
     }
 }
+data class CallLine(val calls: List<CallSet>, val record: List<Int>) {
+    override fun toString(): String {
+        val sb: StringBuilder = StringBuilder("Line ")
+        for (call in calls) sb.append(call)
+        sb.append(record.toString())
+        return sb.toString()
+    }
+}
+class CallSet() {
+    public var complete: Boolean = false
+    public val words: Words = mutableListOf()
+    fun set(word: Word) = words.add(word)
+    override fun toString(): String {
+        val sb: StringBuilder = StringBuilder("Cell Set ")
+        for (word in words) sb.append(words).append(" ")
+        sb.append("\n")
+        return sb.toString()
+    }
+
+}
+fun cleanAndBundle(words: Words): CallLine {
+    val calls: MutableList<CallSet> = mutableListOf()
+
+
+    val previousPointer: Stack<Int> = Stack()
+
+    val record: MutableList<Int> = mutableListOf()
+
+    var currentDepth: Int = 0;
+    calls.add(CallSet())
+    println(words)
+    while (words.isNotEmpty()) {
+        val current: Word = words.removeAt(0)
+        when (current.text) {
+            "(" -> {
+                println("end")
+                previousPointer.push(currentDepth)
+                record.add(currentDepth)
+                calls.add(CallSet())
+                calls[currentDepth].set(Word((calls.size - 1).toString(), Identity.Bump))
+                currentDepth = calls.size - 1
+            }
+            ")" -> {
+                println("Begin")
+                calls[currentDepth].set(Word((previousPointer.peek().toString()), Identity.Bump))
+                currentDepth = previousPointer.pop()
+                record.add(currentDepth)
+            }
+            "," -> {
+                calls[currentDepth].set(Word(("$currentDepth"), Identity.Bump))
+                previousPointer.push(currentDepth)
+                calls.add(CallSet())
+                currentDepth = calls.size - 1
+                record.add(currentDepth)
+            }
+            else -> calls[currentDepth].set(current)
+        }
+        println(words)
+        println(calls[currentDepth])
+    }
+    return CallLine(calls, record)
+}
+
+fun makeBranch(words: Words, head: TreeNode? = null): TreeNode {
+    val currentWord = words.removeAt(0)
+    val curr: TreeNode = TreeNode(head, currentWord)
+    if (currentWord.isA(Identity.Function)) {
+        val subWords: Words = mutableListOf()
+        while (words.size > 0) {
+            val currSubWord = words.removeAt(0)
+            when (currSubWord.text) {
+                "(" -> continue
+                "," -> {
+                    println("Sub phrase detected: " + currSubWord.text)
+                    val functionBranch: TreeNode = makeBranch(subWords, curr)
+                    curr.addChild(functionBranch)
+
+                    continue
+                }
+                ")" -> {
+                    println("End of Phrase detected: " + currSubWord.text)
+                    val functionBranch: TreeNode = makeBranch(subWords, curr)
+                    curr.addChild(functionBranch)
+                    break
+                }
+                else -> subWords.add(currSubWord)
+            }
+            println(subWords)
+        }
+    }
+    return curr
+}
 
 fun buildActionTree(line: String): ActionTree {
+
     val words: Words = assertMeaning(TokenizeString(line))
     val head: TreeNode = if (words[0].isA(Identity.Function)) findFun(words) else findOp(words)
     return ActionTree(line, head)
