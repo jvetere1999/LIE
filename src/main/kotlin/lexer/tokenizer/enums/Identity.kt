@@ -6,5 +6,6 @@ enum class Identity {
     Operation,
     Variable,
     Type,
-    Bump
+    Bump,
+    RESERVED
 }
