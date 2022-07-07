@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/lexer/RegexTokenizerKtTest.kt" afterDir="false" />
+    <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="THIS PUSH&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/exceptions/LexerExceptions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/exceptions/LexerExceptions.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Identity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Identity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/lexer/RegexTokenizerKtTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/lexer/RegexTokenizerKtTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +116,7 @@
       <recent name="tree" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.RegexTokenizerKtTest.getPULL_VARIABLE_ASSIGNMENT">
+  <component name="RunManager" selected="LaTeX.LyeGrammar">
     <configuration name="ActionTreeTest.callSetTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -132,29 +131,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tree.ActionTreeTest.callSetTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ActionTreeTest.newBranchMethod" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tree.ActionTreeTest.newBranchMethod&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -187,6 +163,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;lexer.RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="RegexTokenizerKtTest.getPULL_VARIABLE_ASSIGNMENT" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -210,29 +209,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UtilizeTest.plusLiteralTest (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;dentities.UtilizeTest.plusLiteralTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="TestSuite.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -243,21 +219,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LyeGrammar" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/Documentation/LyeGrammar.tex</main-file>
+        <output-path>$PROJECT_DIR$/out</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>TEXLIVE</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT" />
       <item itemvalue="Gradle.RegexTokenizerKtTest.Test Line to tokens for operators" />
       <item itemvalue="Gradle.ActionTreeTest.callSetTest" />
       <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_VARIABLE_ASSIGNMENT" />
-      <item itemvalue="Gradle.UtilizeTest.plusLiteralTest (1)" />
-      <item itemvalue="Gradle.ActionTreeTest.newBranchMethod" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="LaTeX.LyeGrammar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="LaTeX.LyeGrammar" />
+        <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT" />
         <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_VARIABLE_ASSIGNMENT" />
         <item itemvalue="Gradle.RegexTokenizerKtTest.Test Line to tokens for operators" />
         <item itemvalue="Gradle.ActionTreeTest.callSetTest" />
-        <item itemvalue="Gradle.ActionTreeTest.newBranchMethod" />
-        <item itemvalue="Gradle.UtilizeTest.plusLiteralTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +281,9 @@
       <workItem from="1657149560339" duration="19000" />
       <workItem from="1657149863550" duration="60000" />
       <workItem from="1657149942084" duration="1194000" />
-      <workItem from="1657155196908" duration="2839000" />
+      <workItem from="1657155196908" duration="2958000" />
+      <workItem from="1657200766925" duration="2069000" />
+      <workItem from="1657204503687" duration="1152000" />
     </task>
     <task id="LOCAL-00001" summary="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
       <created>1656588269875</created>
@@ -328,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657101745479</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="THIS PUSH&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
+      <created>1657197993005</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657197993005</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,20 +357,26 @@
     <MESSAGE value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
     <MESSAGE value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
     <MESSAGE value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
+    <MESSAGE value="THIS PUSH&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
+    <option name="LAST_COMMIT_MESSAGE" value="THIS PUSH&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt</url>
-          <line>61</line>
+          <line>69</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt</url>
-          <line>48</line>
+          <line>52</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt</url>
+          <line>136</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

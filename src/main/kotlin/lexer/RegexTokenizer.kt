@@ -36,7 +36,7 @@ fun split(line: String): Words {
         FUNCTION_CALL.matches(line)         -> STRING_TO_TOKEN_FUNCTION_CALL(line)
         VARIABLE_ASSIGNMENT.matches(line)   -> STRING_TO_TOKEN_VARIABLE_ASSIGNMENT(line)
         VARIABLE_REASSIGNMENT.matches(line) -> STRING_TO_TOKEN_VARIABLE_REASSIGNMENT(line)
-        OPERATION_VALIDATE.matches(line)   -> STRING_TO_TOKEN_PULL_OPERATOR(line)
+        OPERATION_VALIDATE.matches(line)    -> STRING_TO_TOKEN_PULL_OPERATOR(line)
         else -> throw InvalidLineException(line)
     }
 }
@@ -45,10 +45,18 @@ val PULL_FUNCTION_ASSIGNMENT: (String) -> List<String> = { line: String ->
     val matches: MatchResult? = FUNCTION_ASSIGNMENT.find(line)
     matches?.destructured?.toList()!!
 }
-
+//Eliminates () so hard code
+val PARAMETER_SEQUENCE_CAPTURE: Regex = Regex("\\s*([a-zA-Z][a-zA-Z0-9]*)\\s*(:)\\s*([a-zA-Z][a-zA-Z0-9]*)(,?)")
+val PULL_PARAMETER_ASSIGNMENT: (String) -> List<String> = { line: String ->
+    PARAMETER_SEQUENCE_CAPTURE.findAll(line).iterator().forEach {}
+}
 val STRING_TO_TOKEN_FUNCTION_ASSIGNMENT: (String) -> Words = { line: String ->
     val matches: List<String> = PULL_FUNCTION_ASSIGNMENT(line)
     val words: Words = mutableListOf()
+
+    val funDesignator: Word = Word(matches[0], Identity.RESERVED)
+    val header: Word = Word(matches[1], Identity.Function)
+    val parameterSequence: String = matches[2]
 
     words
 }
@@ -62,7 +70,7 @@ val PULL_FUNCTION_CALL: (String) -> List<String> = { line: String ->
 val STRING_TO_TOKEN_FUNCTION_CALL: (String) -> Words = { line: String ->
     val matches: List<String> = PULL_FUNCTION_CALL(line)
     val words: Words = mutableListOf()
-    println(matches)
+    println("Here $matches")
     words
 }
 

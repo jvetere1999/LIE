@@ -41,7 +41,14 @@ internal class RegexTokenizerKtTest {
     fun getPULL_FUNCTION_CALL() {
     }
 
-    @Test
-    fun getPULL_FUNCTION_ASSIGNMENT() {
+    @TestFactory
+    fun getPULL_FUNCTION_ASSIGNMENT() = listOf(
+        "fun assm(var1: Int, var2: Int) {" to "assm",
+        "fun send(var1: Int, var2: Int) -> String {" to "String",
+        "fun send(var1: Int, var2: Int) -> Int {" to "Int",
+        "fun send(var1:Int,var2: Int)->Int{" to "Int",
+        "fun send(var1: Int, var2: Int) {" to "send"
+    ).map{ (input, expected) ->
+        STRING_TO_TOKEN_FUNCTION_ASSIGNMENT(input)
     }
 }
