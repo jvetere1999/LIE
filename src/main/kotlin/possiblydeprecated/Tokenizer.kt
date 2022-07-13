@@ -1,4 +1,4 @@
-package lexer.tokenizer
+package possiblydeprecated
 
 import lexer.tokenizer.enums.Identity
 import lexer.tokenizer.enums.OP_PATTERN

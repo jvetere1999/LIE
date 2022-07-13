@@ -4,10 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="THIS PUSH&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="THIS PUSH&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;ADDED&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Documentation/Documentation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Documentation/src/RegEx.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/FunctiionCallTokenizer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/FunctionAssignTokenizer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/OperatorTokenizer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/VariableAssignTokenizer.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/VariableReassignTokenizer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Documentation/LyeGrammar.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Documentation/LyeGrammar.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/Tokenizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/possiblydeprecated/Tokenizer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/lexer/RegexTokenizerKtTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/lexer/RegexTokenizerKtTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,8 +71,9 @@
         <option value="Kotlin Enum" />
         <option value="Kotlin Data Class" />
         <option value="Class" />
-        <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -72,30 +87,34 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2A76sCG9SaVHbxgNyl0tyKzrSvx" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-16&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "full.screen.before.presentation.mode": "true",
+    "jdk.selected.JAVA_MODULE": "corretto-16",
+    "jdk.selected.LATEX_MODULE_TYPE": "Native TeX Live SDK",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "TexifyConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -116,8 +135,8 @@
       <recent name="tree" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.LyeGrammar">
-    <configuration name="ActionTreeTest.callSetTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="LaTeX.main">
+    <configuration name="RegexTokenizerKtTest.Validate Parameter Sequence" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -130,30 +149,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;tree.ActionTreeTest.callSetTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="RegexTokenizerKtTest.Test Line to tokens for operators" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;lexer.RegexTokenizerKtTest.Test Line to tokens for operators&quot;" />
+            <option value="&quot;lexer.RegexTokenizerKtTest.Validate Parameter Sequence&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -224,12 +220,54 @@
         <compiler>PDFLATEX</compiler>
         <compiler-path />
         <sumatra-path />
-        <pdf-viewer>NONE</pdf-viewer>
+        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
         <viewer-command />
         <compiler-arguments />
         <envs />
         <main-file>$PROJECT_DIR$/src/Documentation/LyeGrammar.tex</main-file>
-        <output-path>$PROJECT_DIR$/out</output-path>
+        <output-path>$PROJECT_DIR$/src/Documentation</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>TEXLIVE</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="Thesis" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>NONE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>$PROJECT_DIR$/src/Documentation</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>TEXLIVE</latex-distribution>
+        <has-been-run>true</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" temporary="true">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>BUILT-IN-PDF-VIEWER</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file>$PROJECT_DIR$/src/Documentation/src/main.tex</main-file>
+        <output-path>$PROJECT_DIR$/src/Documentation/out</output-path>
         <auxil-path>{projectDir}/auxil</auxil-path>
         <compile-twice>false</compile-twice>
         <output-format>PDF</output-format>
@@ -241,20 +279,21 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Gradle.RegexTokenizerKtTest.Validate Parameter Sequence" />
       <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT" />
-      <item itemvalue="Gradle.RegexTokenizerKtTest.Test Line to tokens for operators" />
-      <item itemvalue="Gradle.ActionTreeTest.callSetTest" />
       <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_VARIABLE_ASSIGNMENT" />
       <item itemvalue="JUnit.Unnamed" />
+      <item itemvalue="LaTeX.Thesis" />
+      <item itemvalue="LaTeX.main" />
       <item itemvalue="LaTeX.LyeGrammar" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="LaTeX.main" />
         <item itemvalue="LaTeX.LyeGrammar" />
+        <item itemvalue="Gradle.RegexTokenizerKtTest.Validate Parameter Sequence" />
         <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT" />
         <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_VARIABLE_ASSIGNMENT" />
-        <item itemvalue="Gradle.RegexTokenizerKtTest.Test Line to tokens for operators" />
-        <item itemvalue="Gradle.ActionTreeTest.callSetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +322,16 @@
       <workItem from="1657149942084" duration="1194000" />
       <workItem from="1657155196908" duration="2958000" />
       <workItem from="1657200766925" duration="2069000" />
-      <workItem from="1657204503687" duration="1152000" />
+      <workItem from="1657204503687" duration="2887000" />
+      <workItem from="1657208659667" duration="1614000" />
+      <workItem from="1657214236777" duration="739000" />
+      <workItem from="1657215091038" duration="227000" />
+      <workItem from="1657215360580" duration="162000" />
+      <workItem from="1657215546267" duration="369000" />
+      <workItem from="1657218359345" duration="5982000" />
+      <workItem from="1657542533266" duration="2450000" />
+      <workItem from="1657546648926" duration="1289000" />
+      <workItem from="1657709873947" duration="4714000" />
     </task>
     <task id="LOCAL-00001" summary="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
       <created>1656588269875</created>
@@ -334,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657197993005</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="THIS PUSH&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;ADDED&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
+      <created>1657206994636</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657206994636</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -358,28 +413,58 @@
     <MESSAGE value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
     <MESSAGE value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
     <MESSAGE value="THIS PUSH&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
-    <option name="LAST_COMMIT_MESSAGE" value="THIS PUSH&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
+    <MESSAGE value="THIS PUSH&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;ADDED&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
+    <option name="LAST_COMMIT_MESSAGE" value="THIS PUSH&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;ADDED&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt</url>
-          <line>69</line>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
+          <line>78</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt</url>
-          <line>52</line>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
+          <line>60</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt</url>
-          <line>136</line>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
+          <line>145</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/FunctionAssignTokenizer.kt</url>
+          <line>28</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
+          <line>11</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
+          <line>10</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TestSuite$TestSuite__compileTestKotlin_.ic" NAME="TestSuite [compileTestKotlin] Coverage Results" MODIFIED="1654350454783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

@@ -1,5 +1,9 @@
 package lexer
 
+import lexer.tokenizer.regexbased.STRING_TO_TOKEN_FUNCTION_ASSIGNMENT
+import lexer.tokenizer.regexbased.STRING_TO_TOKEN_PULL_OPERATOR
+import lexer.tokenizer.regexbased.STRING_TO_TOKEN_VARIABLE_ASSIGNMENT
+import lexer.tokenizer.regexbased.VALIDATE_PARAMETER
 import org.junit.jupiter.api.Test
 
 import org.junit.jupiter.api.Assertions.*
@@ -50,5 +54,10 @@ internal class RegexTokenizerKtTest {
         "fun send(var1: Int, var2: Int) {" to "send"
     ).map{ (input, expected) ->
         STRING_TO_TOKEN_FUNCTION_ASSIGNMENT(input)
+    }
+    @Test
+    fun `Validate Parameter Sequence` () {
+        assertTrue(VALIDATE_PARAMETER.matches("(var1:Int,var2:Int)"))
+        assertFalse(VALIDATE_PARAMETER.matches("fun asm(var1:Int, var2: Int)"))
     }
 }
