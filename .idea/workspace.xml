@@ -4,25 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="THIS PUSH&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;ADDED&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Documentation/Documentation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Documentation/src/RegEx.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/FunctiionCallTokenizer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/FunctionAssignTokenizer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/OperatorTokenizer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/VariableAssignTokenizer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/VariableReassignTokenizer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b9f81d7a-2a0c-45e3-988c-2705462d3e70" name="Changes" comment="THIS PUSH&#10;Refactored Tokenizer into multiple kotlin files&#10;Added Latex Module for deliverable descriptors of theoretical component of the language&#10;Operation and variable done assignment in progress&#10;ADDED&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Documentation/LyeGrammar.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Documentation/LyeGrammar.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/RegexTokenizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/Tokenizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/possiblydeprecated/Tokenizer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Identity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/enums/Identity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/FunctionAssignTokenizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/FunctionAssignTokenizer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/lexer/tree/ActionTree.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/lexer/tree/ActionTree.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/possiblydeprecated/Tokenizer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/possiblydeprecated/Tokenizer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/kotlin/lexer/RegexTokenizerKtTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/lexer/RegexTokenizerKtTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/lexer/WordTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/lexer/WordTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/parser/token/ParserTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/parser/token/ParserTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/tree/ActionTreeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/tree/ActionTreeTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +126,7 @@
       <recent name="tree" />
     </key>
   </component>
-  <component name="RunManager" selected="LaTeX.main">
+  <component name="RunManager" selected="Gradle.RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT">
     <configuration name="RegexTokenizerKtTest.Validate Parameter Sequence" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -289,11 +280,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT" />
         <item itemvalue="LaTeX.main" />
         <item itemvalue="LaTeX.LyeGrammar" />
-        <item itemvalue="Gradle.RegexTokenizerKtTest.Validate Parameter Sequence" />
-        <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_FUNCTION_ASSIGNMENT" />
         <item itemvalue="Gradle.RegexTokenizerKtTest.getPULL_VARIABLE_ASSIGNMENT" />
+        <item itemvalue="Gradle.RegexTokenizerKtTest.Validate Parameter Sequence" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +322,7 @@
       <workItem from="1657218359345" duration="5982000" />
       <workItem from="1657542533266" duration="2450000" />
       <workItem from="1657546648926" duration="1289000" />
-      <workItem from="1657709873947" duration="4714000" />
+      <workItem from="1657709873947" duration="6856000" />
     </task>
     <task id="LOCAL-00001" summary="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
       <created>1656588269875</created>
@@ -389,7 +380,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657206994636</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="THIS PUSH&#10;Refactored Tokenizer into multiple kotlin files&#10;Added Latex Module for deliverable descriptors of theoretical component of the language&#10;Operation and variable done assignment in progress&#10;ADDED&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]">
+      <created>1657733909898</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657733909898</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +412,8 @@
     <MESSAGE value="ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
     <MESSAGE value="THIS PUSH&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;ADDED&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
     <MESSAGE value="THIS PUSH&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;ADDED&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
-    <option name="LAST_COMMIT_MESSAGE" value="THIS PUSH&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;ADDED&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
+    <MESSAGE value="THIS PUSH&#10;Refactored Tokenizer into multiple kotlin files&#10;Added Latex Module for deliverable descriptors of theoretical component of the language&#10;Operation and variable done assignment in progress&#10;ADDED&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
+    <option name="LAST_COMMIT_MESSAGE" value="THIS PUSH&#10;Refactored Tokenizer into multiple kotlin files&#10;Added Latex Module for deliverable descriptors of theoretical component of the language&#10;Operation and variable done assignment in progress&#10;ADDED&#10;Function Regex Tokenize begun&#10;Added grammar and regular expression documentation and new src folder for holding such&#10;Tests for Variable Assignment functions and operator functions&#10;Finished variable initialization and operator split as well as established recursive flow through split function&#10;Tokenization process and process to assign meaning to said tokens.&#10;Process to generate Abstract Syntax Trees (Action Trees)&#10;Basic Library function of LET&#10;Memory storage module and related data structures&#10;-&#10;String and Array Memory Mod&#10;Let testing in UtilizeTest&#10;Begin tokenizer rewrite towards full use of Regular Expression need to to everything other than fun and write text for fun&#10;&#10;TODO&#10;Refactor Action Tree to be cleaner: Low&#10;Continue Implementing Memory Maps: High&#10;Move all type alias's to separate file: Low&#10;Add Type relationships to Action Trees: High&#10;Finish Let: Very High&#10;Begin the rest of the utilize functions: High&#10;Build data structure packages: Medium&#10;&#10;Statement of Philosophy&#10;Ly is a Functional, Strongly typed, Interpreted, JVM Based Programing. [To be exapanded]" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -448,11 +447,6 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
           <line>13</line>
           <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>
-          <line>10</line>
-          <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/lexer/tokenizer/regexbased/RegexTokenizer.kt</url>

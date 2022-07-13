@@ -53,7 +53,7 @@ internal class RegexTokenizerKtTest {
         "fun send(var1:Int,var2: Int)->Int{" to "Int",
         "fun send(var1: Int, var2: Int) {" to "send"
     ).map{ (input, expected) ->
-        STRING_TO_TOKEN_FUNCTION_ASSIGNMENT(input)
+        println(STRING_TO_TOKEN_FUNCTION_ASSIGNMENT(input))
     }
     @Test
     fun `Validate Parameter Sequence` () {

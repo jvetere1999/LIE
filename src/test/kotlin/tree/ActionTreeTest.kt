@@ -1,10 +1,12 @@
 package tree
 
 import lexer.Word
-import lexer.tokenizer.*
+import possiblydeprecated.*
+import possiblydeprecated.assertMeaning
 import lexer.tree.*
 import org.junit.jupiter.api.DynamicTest
 import org.junit.jupiter.api.TestFactory
+import possiblydeprecated.functionVerifier
 import kotlin.test.assertEquals
 
 internal class ActionTreeTest {

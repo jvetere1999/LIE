@@ -7,8 +7,9 @@ import exceptions.InvalidDeclarationException
 import exceptions.InvalidFunctionException
 import lexer.Word
 import lexer.Words
-import lexer.tokenizer.TokenizeString
-import lexer.tokenizer.assertMeaning
+import possiblydeprecated.TokenizeString
+import possiblydeprecated.assertMeaning
+
 import java.util.*
 
 data class ActionTree (val text: String, val head: TreeNode) {
